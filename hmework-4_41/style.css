@@ -1,0 +1,57 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(#ddf1ee,  #858787 );
+}
+.form{
+  width: 400px;
+  margin: 200px auto;
+}
+
+
+fieldset{
+  padding: 5px 50px 5px 20px;
+  border-radius: 10px;
+  border: none;
+  /* background-image:  url( #7da398); */
+  background-color: #7da398;
+  color: #F0F0F0;
+  font-size: 18px;
+  box-shadow: 15px 15px 30px#69716e;
+}
+
+input,
+textarea{ 
+  background-color: #F0F0F0 ;
+  padding: 10px;
+  margin: 5px 0 10px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  box-shadow: 3px 3px 5px inset #69716e ;
+border-radius: 8px;
+  
+}
+.checkbox{
+margin: 0;
+width: auto;
+height: auto;
+  cursor: pointer;
+  
+}
+textarea{
+  resize: vertical;
+  min-height: 50px;
+  max-height: 300px;
+}
+
+button{
+  color: #F0F0F0;
+  background-color: #25625a;
+  border-color: #c2d6cf;
+  border-radius: 10px;
+  margin: 5px 0;
+  display: block;
+  cursor: pointer;
+}
