@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #000;
+}
+
+.container {
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: auto;
+    border-bottom: 1px solid #000;
+}
+
+.header-logo {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background-color: #000;
+}
+
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.nav {
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+.header-tel{
+    text-decoration: none;
+}
+
