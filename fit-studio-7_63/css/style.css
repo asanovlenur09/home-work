@@ -1,0 +1,141 @@
+html {
+  font-family: Ubuntu;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p{
+  margin: 0;
+}
+button{
+border: none;
+background-color: transparent;
+padding: 0;
+
+}
+
+
+.container{
+  max-width: 1250px;
+  height: auto;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.article{
+  padding-top: 80px;
+  margin-bottom: 17px;
+}
+
+.article-title{
+  font-family: Oswald;
+  font-weight: 600px;
+  max-width: 596px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2C332F;
+  margin-bottom: 40px;
+}
+.article-title-large{
+  font-size: 62px;
+
+}
+.article-title-medium{
+font-size: 36px;
+}
+.article-text{
+  font-family: Ubuntu;
+  font-weight: normal;
+  color: #535755;
+  line-height: 130%;
+  margin-bottom: 20px;
+
+}
+
+.article-bottom {
+margin-bottom: 80px;
+}
+.article-wrapper-decor{
+  position: relative;
+  width: 100%;
+  max-height: 512px;
+}
+.article-wrapper-decor::before{
+  content: "";
+  background: url(../images/декор\ 2.svg);
+  width: 528px;
+  height: 48px;
+  position: absolute;
+  
+  z-index: -1;
+}
+
+.article-wrapper-decor-1::before{
+top: 100px;
+  left: -350px;
+}
+
+.article-wrapper-decor-2::before{
+bottom: 136px;
+  right: -350px;
+}
+.article-wrapper-decor-2{
+  margin-bottom: 40px;
+}
+
+.article-img{
+  width: 100%;
+}
+
+.article-list{
+  list-style: none;
+  padding-left: 0;
+  
+}
+.article-video{
+  width: 100%;
+  margin-bottom: 40px;
+
+}
+.article-item{
+  margin-bottom: 12px ;
+  display: flex;
+align-items: center;
+}
+.article-item::before{
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #3596ED;
+margin-right: 8px;
+}
+.article-video{
+  width: 100%;
+  margin-bottom: 40px;
+
+}
+
+.article-play-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #3596ED;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
