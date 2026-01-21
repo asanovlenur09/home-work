@@ -1,0 +1,40 @@
+.footer {
+  margin-top: auto;
+  background: linear-gradient(90deg, rgba(73, 169, 255, 0.2) 0%, rgba(252, 124, 217, 0.2) 100%);
+  padding: 60px 0 40px;
+  text-align: center;
+}
+
+.footer-top {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: solid 1px #D3CBD9;
+}
+
+.footer-logo {
+  margin: 0 auto 40px;
+}
+
+.footer-nav ul {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-nav a {
+  line-height: 130%;
+  color: #535755;
+}
+
+.footer-nav a:hover{
+  transition: color 0.3s;
+  color: #3596ED;
+}
+
+.copy {
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #858E8A;
+}
