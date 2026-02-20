@@ -1,0 +1,188 @@
+html {
+  font-family: Ubuntu;
+  font-weight: normal;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+a,
+button {
+  outline: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+summary{
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.container {
+  max-width: 1250px;
+  height: auto;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 84px;
+  height: 45px;
+  text-transform: uppercase;
+  color: #2C332F;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+
+.section {
+  margin-bottom: 140px;
+}
+
+.title-large {
+  font-family: Oswald, serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #2C332F;
+}
+
+.title-medium{
+font-family: Oswald, serif;
+font-weight: 500;
+font-size: 24px;
+line-height: 115%;
+text-transform: uppercase;
+color: #2C332F;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #3596ED;
+  outline-offset: 1px;
+}
+
+button.button:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+
+.button:hover {
+  background-color: #39a3ff;
+}
+
+.button:not(:disabled):active {
+  background-color: #2d83cf;
+}
+
+.decor::before {
+  content: "";
+  background: url(../images/decor-icon.svg) repeat-x;
+  position: absolute;
+  z-index: -1;
+  height: 48px;
+}
+
+/* ==========media=========media========media=========media===========media========== *//* ==========media=========media========media=========media===========media========== */
+/* ==========media=========media========media=========media===========media========== *//* ==========media=========media========media=========media===========media========== */
+
+@media(width <=992px) {
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media(width <=768px){
+  .container{
+  max-width: 576px;
+  }
+
+  .title-large{
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .home-page .title-large{
+    max-width: inherit;
+    text-align: center;
+
+  }
+
+  .title-medium{
+    font-size: 22px;
+  }
+}
+
+@media(width <= 576px){
+  .section{
+    margin-bottom: 80px;
+  }
+
+  .title-large{
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .title-medium{
+    font-size: 18px;
+  }
+}

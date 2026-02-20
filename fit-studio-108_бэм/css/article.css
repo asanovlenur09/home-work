@@ -1,0 +1,152 @@
+.article {
+  padding-top: 80px;
+  margin-bottom: 120px;
+}
+
+
+
+.article__title-medium {
+  font-size: 36px;
+}
+
+.article__text {
+  font-family: Ubuntu;
+  font-weight: normal;
+  color: #535755;
+  line-height: 130%;
+  margin-bottom: 20px;
+
+}
+
+.article__bottom {
+  margin-bottom: 80px;
+}
+
+.article__wrapper-decor {
+  position: relative;
+}
+
+
+
+.article__wrapper-decor--top::before {
+  width: 50%;
+  top: 100px;
+  left: 0;
+}
+
+.article__wrapper-decor--bottom::before {
+  width: 50%;
+  top: 136px;
+  right: 0;
+}
+
+
+.article__img {
+  width: 100%;
+}
+
+.article__list {
+  list-style: none;
+  padding-left: 0;
+
+}
+
+.article__video {
+  width: 100%;
+  margin-bottom: 40px;
+
+}
+
+.article__item {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.article__item::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #3596ED;
+  margin-right: 8px;
+}
+
+.article__video {
+  width: 100%;
+  margin-bottom: 40px;
+
+}
+
+.article__media-section .container {
+  position: relative;
+}
+
+.article__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #3596ED;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+} 
+
+.article__button:hover {
+  background-color: #39a3ff;
+}
+
+.article__button:not(:disabled):active {
+  background-color: #2d83cf;
+}
+
+/* ================media============== *//* ================media============== *//* ================media============== */
+/* ================media============== *//* ================media============== *//* ================media============== */
+
+
+@media(width <= 768px){
+  .article__title-medium {
+    font-size: 32px;
+  }
+
+  .article__bottom{
+    margin-bottom: 60px;
+  }
+
+.article__wrapper-decor{
+  display: none;
+}
+}
+
+@media(width <=576px){
+  .article {
+  padding-top: 60px;
+  margin-bottom: 80px;
+  
+}
+
+.article__title-medium {
+  font-size: 32px;
+}
+
+.article__bottom{
+    margin-bottom: 40px;
+  }
+
+  .article__button{
+    width: 50px;
+    height: 50px;
+  }
+
+  .article__button img{
+    width: 18px;
+    height: 18px;
+  }
+}
+
