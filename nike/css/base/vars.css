@@ -20,8 +20,10 @@
 --transition-time: .3s;
 
 /* layers */
+--layer-negative:-1;
 --layer-1: 0;
 --layer-2: 2;
 --layer-3: 3;
+--layer-4: 4;
 
 }

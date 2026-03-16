@@ -10,7 +10,7 @@
     position: relative;
     width: 24px;
     height: 24px;
-    z-index: var(--layer-2);
+    z-index: var(--layer-3);
   }
 
   .burger__check {
@@ -20,7 +20,7 @@
     top: 0;
     left: 0;
     opacity: 0;
-    z-index: var(--layer-3);
+    z-index: var(--layer-4);
   }
 
   .burger__line {
