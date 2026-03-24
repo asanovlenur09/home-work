@@ -67,18 +67,52 @@
           </ul>
           <h1 class="hero__title">Nike <span class="hero__title-accent">air</span> mag</h1>
         </header>
-        <img class="hero__img" src="./imeges/nike-air-mag-1.png" width="846" height="713"
+        <picture>
+        <source srcset="./images/nike-air-mag-1.webp" type="image/webp">
+        <img class="hero__img" src="./images/nike-air-mag-1.png" width="846" height="713"
           alt="кроссовок Nike Air Mag с желтым кольцом под подошвой">
+          </picture>
         <footer class="hero__footer">
           <a class="hero__details" href="#">
             Подробнее
             <svg width="24" height="24">
-              <use 
-              class="hero__details-icon" href="./icons/main-sprite.svg#arrow-right"></use>
+              <use class="hero__details-icon" href="./icons/main-sprite.svg#arrow-right"></use>
             </svg>
           </a>
         </footer>
       </div>
+    </section>
+
+    <section id="air-mag" class="air-mag">
+      <div class="container">
+        <header class="air-mag__header">
+          <h2 class="title-md air-mag__title">Air Mag</h2>
+          <p class="air-mag__header-text text-regular">
+            Это не просто кроссовки — это шаг в будущее. С уникальным
+            дизайном и
+            передовыми технологиями, эти кроссовки вдохновлены легендарной киноделией и готовы сопровождать вас в любых
+            приключениях.
+          </p>
+        </header>
+        <footer class="air-mag__footer">
+          <picture>
+        <source srcset="./images/nike-air-mag-2.webp" type="image/webp">
+          <img class="air-mag__img" src="./images/nike-air-mag-2.png" width="911" height="635" loading="lazy"
+            alt="пара кроссовок Nike Air Mag вид с верху">
+            </picture>
+          <ul class="air-mag__footer-list">
+            <li class="air-mag__footer-item">
+              инновационная технология амортизации, которая обеспечивает
+              непревзойденную
+              поддержу суставов
+            </li>
+            <li class="air-mag__footer-item">
+              высококачественные синтетические материалы для долговечности и комфорта
+            </li>
+          </ul>
+        </footer>
+      </div>
+
     </section>
   </main>
 </body>

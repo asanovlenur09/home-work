@@ -1,7 +1,11 @@
 .page {
   font-family: var(--font-family);
   font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
   color: var(--main-color);
+  scroll-behavior: smooth;
+  scroll-padding: 98px;
 }
 
 .page__body {
@@ -18,9 +22,25 @@
   margin: 0 auto;
 }
 
+img{
+  object-fit: cover;
+}
+
 a:focus-visible,
 button:focus-visible {
   outline: 1px solid var(--accent-color);
   outline-offset: 3px;
 }
 
+
+
+.text-regular {
+  font-weight: 400px;
+}
+
+.title-md {
+  font-weight: 600;
+  font-size: clamp(32px, 1.167rem + 4.17vw, 60px);
+  text-transform: uppercase;
+  line-height: normal;
+}
