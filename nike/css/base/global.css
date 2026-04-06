@@ -22,7 +22,7 @@
   margin: 0 auto;
 }
 
-img{
+img {
   object-fit: cover;
 }
 
@@ -38,9 +38,46 @@ button:focus-visible {
   font-weight: 400px;
 }
 
+.title-sm,
 .title-md {
   font-weight: 600;
-  font-size: clamp(32px, 1.167rem + 4.17vw, 60px);
   text-transform: uppercase;
   line-height: normal;
+}
+
+
+.title-md {
+  /* min-width 375, max-width 992px*/
+  font-size: clamp(32px, 1.167rem + 4.17vw, 60px);
+}
+
+.title-sm {
+  /* min-width 375, max-width 992px*/
+  font-size: clamp(24px, 1.023rem + 2.04vw, 32px);
+}
+
+@media (width > 576px) {
+  .section {
+    padding-bottom: 140px;
+  }
+}
+
+@media (width > 576px) {
+  .section {
+    padding-bottom: 140px;
+  }
+
+  .section__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (width <=576px) {
+  .section {
+    padding-bottom: 80px;
+  }
+
+  .section__title {
+    margin-bottom: 30px;
+  }
 }
