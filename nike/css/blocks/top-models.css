@@ -32,6 +32,13 @@
     color: var(--accent-color);
   }
 }
+@media (any-hover: hover) {
+  .top-models__product-link:hover
+  .top-models__product-img {
+    transform: scale(1.1);
+
+  }
+}
 
 .top__models-product-content {
   display: flex;
@@ -66,7 +73,9 @@
 
 .top-models__product-img{
   width: 100%;
+  transition: transform var(--transition-time);
 }
+
 
 @media (width <=480px) {
   .top-models__product-img {

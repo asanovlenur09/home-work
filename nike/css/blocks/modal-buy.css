@@ -1,0 +1,54 @@
+@media (width > 576px) {
+  .modal-buy {
+    width: min(800px, 80% - 20px);
+  }
+}
+
+.modal-buy__content {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (width > 576px) {
+  .modal-buy__content-title {
+    margin-bottom: 56px;
+  }
+
+}
+
+@media (width <=576px) {
+  .modal-buy__content-title {
+    margin-bottom: 36px;
+  }
+
+}
+
+
+.modal-buy__input {
+  width: 100%;
+  padding: 20px 24px;
+  margin-bottom: 40px;
+  border: 1px solid var(--accent-color);
+  box-shadow: var(--shadow-accent-glow),
+    inset var(--shadow-accent-glow);
+  border-radius: 12px;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+}
+
+.modal-buy__submit {
+  padding: 19px 38px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 6px;
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+}
+
+@media (any-hover: hover) {
+  .modal-buy__submit:hover {
+    box-shadow: 0 0 6px 3px var(--accent-glow-color);
+  }
+}
