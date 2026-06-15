@@ -1,0 +1,123 @@
+@media (width > 768px) {
+  .visionaries {
+    padding-bottom: 289px;
+  }
+}
+
+@media (576px < width <= 768px) {
+  .visionaries {
+    padding-bottom: 200px;
+  }
+}
+
+@media (width <= 576px) {
+  .visionaries {
+    padding-bottom: 120px;
+  }
+}
+
+.visionaries__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+}
+
+@media (width > 1200px) {
+  .visionaries__container {
+    padding-right: 74px;
+    padding-left: 65px;
+  }
+
+}
+
+
+@media (width <=1200px) {
+  .visionaries__container {
+    padding-inline: 30px;
+  }
+
+}
+
+
+@media (width<=1200px) {
+  .visionaries__container {
+    flex-direction: column;
+  }
+
+}
+
+.visionaries__picture {
+  flex-shrink: 0;
+}
+
+.visionaries__content {
+  max-width: 621px;
+}
+
+.visionaries__title {
+  font-family: "Futura Md BT";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+@media (width<=1200px) {
+  .visionaries__title {
+    text-align: center;
+  }
+}
+
+@media (width > 576px) {
+  .visionaries__title {
+    font-size: 48px;
+  }
+}
+
+@media (width <=576px) {
+  .visionaries__title {
+    font-size: 38px;
+  }
+}
+
+
+
+
+.visionaries__text {
+  font-family: "Futura Bk BT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+@media (width<=1200px) {
+  .visionaries__text {
+    text-align: center;
+  }
+}
+
+.visionaries__text-title {
+  color: #FFF;
+  font-family: "Futura Hv BT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.visionaries__button {
+  padding: 5px 23px;
+}
+
+@media (width<=1200px) {
+  .visionaries__button {
+    margin: 0 auto;
+  }
+}

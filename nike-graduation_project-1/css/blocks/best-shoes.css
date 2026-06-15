@@ -1,0 +1,159 @@
+.best-shoes{
+  padding-bottom: 227px;
+}
+
+@media (width<=1200px) {
+  .best-shoes {
+  padding-bottom: 180px;
+    
+  }
+}
+
+@media (width<=576px) {
+  .best-shoes {
+  padding-bottom: 120px;
+  }
+}
+
+.best-shoes__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 61px;
+}
+
+@media (width<=1200px) {
+  .best-shoes__container {
+    flex-direction: column;
+  }
+}
+
+.best-shoes__content {
+  max-width: 618px;
+}
+
+.best-shoes__title {
+  font-family: var(--font4);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+
+@media (width > 576px) {
+  .best-shoes__title {
+    font-size: 64px;
+  }
+}
+
+
+@media (width<=1200px) {
+  .best-shoes__title {
+    text-align: center;
+  }
+}
+
+@media (width<=576px) {
+  .best-shoes__title {
+    font-size: 40px;
+  }
+}
+
+.best-shoes__text {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+@media (width > 576px) {
+  .best-shoes__text {
+    font-size: 24px;
+  }
+}
+
+
+@media (width<=1200px) {
+  .best-shoes__text {
+    text-align: center;
+  }
+}
+
+@media (width<=576px) {
+  .best-shoes__text {
+    font-size: 20px;
+  }
+}
+
+.best-shoes-button {
+  padding-block: 5px;
+  padding-right: 15px;
+  padding-left: 24px;
+}
+
+@media (width<=1200px) {
+  .best-shoes-button {
+    margin: 0 auto;
+  }
+}
+
+.best-shoes__picture {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+
+.best-shoes__picture::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  border-radius: 111px;
+  background: conic-gradient(from 180deg at 50% 50%, #BA0000 0deg, rgba(186, 0, 0, 0.28) 360deg);
+  mix-blend-mode: hard-light;
+  filter: blur(125px);
+  z-index: -1;
+}
+
+@media (width > 576px) {
+  .best-shoes__picture::after {
+    width: 500px;
+    height: 586px;
+  }
+}
+
+@media (width<=576px) {
+  .best-shoes__picture::after {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+
+.best-shoes__picture-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+
+.best-shoes__picture-img {
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+@media (width > 576px) {
+  .best-shoes__picture-img--margin {
+    margin-left: 60px;
+    margin-right: 20px;
+  }
+}

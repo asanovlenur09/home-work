@@ -1,0 +1,27 @@
+/* ===base=== */
+@import url(../css/base/normalize.css);
+@import url(../css/base/vars.css);
+@import url(../css/base/fonts.css);
+@import url(../css/base/global.css);
+
+
+/* ===blocks=== */
+@import url(../css/blocks/header.css);
+@import url(../css/blocks/burger.css);
+@import url(../css/blocks/hero.css);
+@import url(../css/blocks/products-slider.css);
+@import url(../css/blocks/about.css);
+@import url(./blocks/test.css);
+@import url(./blocks/sellers.css);
+@import url(./blocks/sports-products.css);
+@import url(./blocks/modern-shoes.css);
+@import url(./blocks/nike-style.css);
+@import url(./blocks/brands.css);
+@import url(./blocks/best-shoes.css);
+@import url(./blocks/visionaries.css);
+@import url(./blocks/nikeclub-banner.css);
+@import url(./blocks/features.css);
+@import url(./blocks/footer.css);
+
+
+

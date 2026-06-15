@@ -1,0 +1,157 @@
+.footer__container {
+  padding: 72px 0 80px 0;
+}
+
+
+.footer__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 80px;
+}
+
+@media (width <=1200px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+}
+
+
+.footer__title {
+  font-family: var(--font6);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+@media (width<=576px) {
+
+  .footer__title {
+    text-align: center;
+    font-size: 36px;
+  }
+}
+
+.footer__newsletter-form {
+  position: relative;
+}
+
+.footer__newsletter-form-input {
+  font-family: var(--font6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #ffffff80;
+}
+
+.footer__newsletter-form-input {
+  padding: 16px 83px;
+  background-color: black;
+  border-radius: 80px;
+  border: 1px solid #FFF;
+  margin-bottom: 88px;
+}
+
+@media (width<=576px) {
+  .footer__newsletter-form-input {
+    padding: 16px 55px;
+  }
+}
+
+
+
+.footer__newsletter-form-button {
+  color: #000;
+  font-family: var(--font6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+
+.footer__newsletter-form-button {
+  position: absolute;
+    right: 57px;
+  border-radius: 80px;
+  border: 1px solid #FFF;
+  background: #FFF;
+  padding: 16px 40px;
+}
+
+@media (width<=576px) {
+  .footer__newsletter-form-button {
+  right: 0px;
+
+  }
+}
+
+@media (width<=1200px) {
+  .footer__logo {
+    display: block;
+    margin-inline: auto;
+  }
+}
+
+
+.footer__menu-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 42px 71px;
+}
+
+.footer__menu:nth-child(3) {
+  grid-row: 2 span;
+}
+
+@media (width<=768px) {
+  .footer__menu-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 42px 71px;
+  }
+}
+
+
+.footer__menu-title {
+  font-family: var(--font3);
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+@media (width<=1200px) {
+
+  .footer__menu-title,
+  .footer__menu-item {
+    text-align: center;
+  }
+}
+
+
+.footer__menu-item {
+  margin-bottom: 24px;
+
+}
+
+.footer__menu-link {
+  font-family: var(--second-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: #FFF;
+}
+
+.footer__bottom{
+  padding-block: 30px;
+}

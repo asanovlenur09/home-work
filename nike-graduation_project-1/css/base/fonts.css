@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Futura Bk BT";
+    src: local("Futura Bk BT"), local("Futura-Bk-BT"),
+    url("../../fonts/Futura\ Bk\ Book.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Futura LtCn BT";
+    src: local("Futura LtCn BT Light"), local("Futura-LtCn-BT-Light"),
+    url("../../fonts/Futura\ LtCn\ BT\ Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter Regular"), local("Inter-Regular"),
+    url("../../fonts/Inter_18pt-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Futura XBlkCnIt BT";
+    src: local("Futura XBlkCnIt BT Black Italic"), local("Futura-XBlkCnIt-BT-Black Italic"),
+    url("../../fonts/Futura\ XBlkCnIt\ BT\ Extra\ Black\ Italic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Futura Md BT";
+    src: local("Futura Md BT Bold Italic"), local("Futura-Md-BT-Bold-Italic"),
+    url("../../fonts/Futura\ Md\ BT\ Bold\ Italic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Futura Md BT";
+    src: local("Futura Md BT Medium"), local("Futura-Md-BT-Medium"),
+    url("../../fonts/Futura\ Md\ BT\ Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Futura Lt BT";
+    src: local("Futura Lt BT Medium"), local("Futura-Lt-BT-light"),
+    url("../../fonts/Futura\ Lt\ BT\ Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Futura Hv BT";
+    src: local("Futura Hv BT"), local("Futura-Hv-BT"),
+    url("../../fonts/Futura\ Hv\ BT\ Heavy.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Futura LT";
+    src: local("Futura LT Bold"), local("Futura-LT-Bold"),
+    url("../../fonts/FuturaLT-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Futura LT";
+    src: local("Futura LT Regular"), local("Futura-LT-Regular"),
+    url("../../fonts/FuturaLT.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Futura-Black";
+    src: local("Futura-Black"), local("Futura-Black"),
+    url("../../fonts/Futura-Black\ Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+}

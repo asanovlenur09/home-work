@@ -1,0 +1,144 @@
+@media (width > 768px) {
+  .nikeclub-banner {
+    padding-bottom: 298px;
+  }
+}
+
+@media (width <=768px) {
+  .nikeclub-banner {
+    padding-bottom: 100px;
+  }
+}
+
+.nikeclub-banner__container {
+  position: relative;
+}
+
+@media (width > 576px) {
+  .nikeclub-banner__container {
+    padding-inline: 60px;
+  }
+}
+
+
+
+.nikeclub-banner__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 64px 40px 65px;
+  border-radius: 10px;
+  border: 1px solid #FFF;
+  backdrop-filter: blur(2px);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (width <=1200px) {
+  .nikeclub-banner__wrapper {
+    flex-direction: column-reverse;
+  }
+
+}
+
+@media (width <=576px) {
+  .nikeclub-banner__wrapper {
+    padding-block: 30px;
+  }
+}
+
+
+.nikeclub-banner__title {
+  font-family: "Futura Md BT";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+@media (width <=768px) {
+  .nikeclub-banner__title {
+    font-size: 38px;
+  }
+
+}
+
+@media (width <=576px) {
+  .nikeclub-banner__title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+}
+
+.nikeclub-banner__text {
+  font-family: "Futura Bk BT";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+@media (width <=768px) {
+  .nikeclub-banner__text {
+    font-size: 20px;
+  }
+
+}
+
+@media (width <=576px) {
+  .nikeclub-banner__text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+}
+
+.nikeclub-banner__button {
+  padding: 5px 23px;
+}
+
+@media (width <=576px) {
+  .nikeclub-banner__button {
+    margin: 0 auto;
+  }
+}
+
+
+@media (width <=567px) {
+  .nikeclub-banner-logo {
+    display: none;
+  }
+}
+
+@media (width > 567px) {
+  .nikeclub-banner-logo-sm {
+    display: none;
+  }
+}
+
+@media (width > 1200px) {
+  .nikeclub-banner-decor-img {
+    position: absolute;
+    right: 0;
+    top: 125px;
+  }
+}
+
+@media (769px < width <=1200px) {
+  .nikeclub-banner-decor-img {
+    position: absolute;
+    right: 0;
+    top: 300px;
+  }
+}
+
+@media (width <=769px) {
+  .nikeclub-banner-decor-img {
+    display: none;
+  }
+}

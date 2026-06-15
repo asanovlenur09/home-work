@@ -1,0 +1,169 @@
+@media (width > 1200px) {
+  .nike-style__container {
+    padding-left: 71px;
+    padding-right: 35px;
+  }
+}
+
+@media (width <= 1200px) {
+  .nike-style__container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+.nike-style__title {
+  font-family: var(--font4);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  text-transform: uppercase;
+  margin-bottom: 110px;
+}
+
+@media (width <=768px) {
+  .nike-style__title {
+    text-align: center;
+  }
+}
+
+@media (width <=576px) {
+  .nike-style__title {
+    font-size: 40px;
+    margin-bottom: 60px;
+    line-height: 50px;
+  }
+}
+
+@media (width <=375px) {
+  .nike-style__title {
+    font-size: 35px;
+  }
+}
+
+.nike-style__title-accent {
+  font-family: var(--font-lite);
+  font-weight: 300;
+}
+
+
+.nike-style__title-accent,
+.nike-style__title-dot {
+  color: var(--accent-color);
+}
+
+.nike-style__product-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 82px;
+}
+
+@media (768px < width <=992px) {
+  .nike-style__product-wrapper {
+    gap: 30px;
+  }
+}
+
+@media (width <=768px) {
+  .nike-style__product-wrapper {
+    flex-direction: column;
+  }
+
+}
+
+.nike-style__product {
+  position: relative;
+}
+
+.nike-style__product::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  background: conic-gradient(from 180deg at 50% 50%, #F00 0deg, rgba(255, 0, 0, 0.00) 360deg);
+  background-blend-mode: luminosity;
+  filter: blur(100px);
+  z-index: var(--layer-negative);
+}
+
+
+.nike-style__product-title {
+  color: #FFF;
+  text-align: right;
+  font-family: var(--font3);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+@media (width <=768px) {
+  .nike-style__product-title {
+    text-align: center;
+  }
+}
+
+
+
+
+.nike-style__product-price {
+  color: #BA0000;
+  text-align: right;
+  font-family: var(--font3);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 16px;
+  padding-top: 14px;
+}
+
+@media (width <=768px) {
+  .nike-style__product-price {
+    text-align: center;
+    margin-left: 48%;
+  }
+}
+
+@media (width <=420px) {
+  .nike-style__product-price {
+    margin-left: 60%;
+  }
+}
+
+
+@media (width > 1200px) {
+  .nike-style__product-img {
+    margin-top: -14px;
+  }
+}
+
+@media (width<=1200px) {
+  .nike-style__product-img {
+    margin-top: 15px;
+  }
+}
+
+.nike-style__product-img--mercurial-superfly {
+  margin-right: 69px;
+}
+
+
+
+
+.nike-style__product-img--ir-zoom-alphafly {
+  margin-right: 70px;
+  transform: rotate(-21deg);
+}
+
+.nike-style__product-img--dunk-high {
+  margin-right: 49px;
+  transform: rotate(-21deg);
+}

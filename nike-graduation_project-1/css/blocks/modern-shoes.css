@@ -1,0 +1,177 @@
+@media (width > 768px) {
+  .modern-shoes {
+    padding-bottom: 238px;
+  }
+}
+
+@media (width <= 768px) {
+  .modern-shoes {
+    padding-bottom: 120px;
+  }
+}
+
+.modern-shoes__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: 132px;
+}
+
+
+@media (992px < width <=1200px) {
+  .modern-shoes__container {
+    gap: 50px;
+  }
+
+}
+
+@media (width > 992px) {
+  .modern-shoes__container {
+    padding-right: 110px;
+    padding-left: 80px;
+  }
+}
+
+@media (width <=992px) {
+  .modern-shoes__container {
+    padding-inline: 100px;
+    flex-direction: column;
+  }
+}
+
+@media (576px < width <=768px) {
+  .modern-shoes__container {
+    padding: 50px;
+  }
+
+}
+
+
+@media (width <=576px) {
+  .modern-shoes__container {
+    padding: 0;
+  }
+
+}
+
+.modern-shoes__picture {
+  position: relative;
+  margin-inline: auto;
+  flex-shrink: 0;
+}
+
+
+.modern-shoes__picture::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background: #ffffff99;
+  mix-blend-mode: soft-light;
+  backdrop-filter: blur(2px);
+  z-index: var(--layer-1);
+}
+
+
+.modern-shoes__picture::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 357px;
+  height: 357px;
+  border-radius: 111px;
+  background: conic-gradient(from 9deg at 46.78% 51.75%, #BA0000 0deg, #BA0000 360deg);
+  mix-blend-mode: hard-light;
+  filter: blur(125px);
+}
+
+.modern-shoes__img {
+  width: 100%;
+  position: relative;
+  z-index: var(--layer-1);
+}
+
+
+.modern-shoes__title {
+  font-family: var(--font4);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+
+
+@media (992px < width <=1200px) {
+  .modern-shoes__title {
+    font-size: 40px;
+  }
+}
+
+@media (width <=992px) {
+  .modern-shoes__title {
+    text-align: center;
+  }
+}
+
+@media (576px < width <=768px) {
+  .modern-shoes__title {
+    font-size: 54px;
+  }
+}
+
+@media (width <=576px) {
+  .modern-shoes__title {
+    font-size: 40px;
+  }
+}
+
+
+.modern-shoes__text {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+@media (width > 576px) {
+  .modern-shoes__text {
+    font-size: 24px;
+  }
+}
+
+@media (width <=992px) {
+  .modern-shoes__text {
+    text-align: center;
+  }
+}
+
+@media (width <=576px) {
+  .modern-shoes__text {
+    font-size: 20px;
+  }
+}
+
+  .modern-shoes__button {
+    padding-block: 11px;
+    padding-right: 15px;
+    padding-left:23px;
+  }
+
+
+@media (width<=992px) {
+  .modern-shoes__button {
+    margin-inline: auto;
+  }
+}

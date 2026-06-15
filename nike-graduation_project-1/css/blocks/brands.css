@@ -1,0 +1,23 @@
+.brands {
+  padding-block: 240px;
+}
+
+@media (width<=768px) {
+  .brands {
+    padding-block: 180px;
+  }
+}
+
+.brands__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+@media (width<=576px) {
+  .brands__container {
+    gap: 50px 80px;
+  }
+}

@@ -1,0 +1,194 @@
+
+
+@media (width > 1200px) {
+  .about {
+    padding-bottom: 212px;
+  }
+}
+
+@media (992px < width <=1200px) {
+  .about {
+    padding-bottom: 180px;
+  }
+}
+
+@media (576px < width <=992px) {
+  .about {
+    padding-bottom: 130px;
+  }
+}
+
+@media (width <=576px) {
+  .about {
+    padding-bottom: 70px;
+  }
+}
+
+
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 80px;
+  position: relative;
+
+}
+
+@media (width > 768px) {
+  .about__container {
+    gap: 80px;
+  }
+}
+
+@media (576px < width <=768px) {
+  .about__container {
+    gap: 50px;
+  }
+}
+
+@media (width <=576px) {
+  .about__container {
+    gap: 30px;
+  }
+}
+
+
+.about__title {
+  text-align: center;
+  font-family: var(--font4);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  position: relative;
+}
+
+@media (width<=768px) {
+  .about__title {
+    font-size: 54px;
+  }
+
+}
+
+@media (width<=576px) {
+  .about__title {
+    font-size: 36px;
+    line-height: 70px;
+
+  }
+}
+
+
+.title-accent::after {
+  content: "";
+  display: inline-block;
+  width: 285px;
+  height: 55px;
+  background: #BA0000;
+  position: absolute;
+  top: 72px;
+  right: 0;
+  transform: translateY(50%) rotate(11.202deg);
+  mix-blend-mode: multiply;
+}
+
+@media (width<=576px) {
+  .title-accent::after {
+    width: 220px;
+    height: 35px;
+    top: 60px;
+  }
+
+}
+
+
+
+.about__title-after {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@media (width<=576px) {
+  .about__title-after {
+    align-items: center;
+    gap: 15px;
+
+  }
+
+
+}
+
+
+.about__title-after::after {
+  content: "";
+  display: inline-block;
+  background-image: url(../../images/title-image-1.jpg);
+  width: 72px;
+  height: 72px;
+
+}
+
+
+
+.about__title-before {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+.about__title-before::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../../images/title-image-2.png);
+  width: 72px;
+  height: 72px;
+}
+
+@media (width<=576px) {
+
+  .about__title-after::after,
+  .about__title-before::before {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+
+.about__text {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+}
+
+@media (width > 992px) {
+  .about__text {
+    padding-inline: 188px;
+  }
+}
+
+
+@media (width <=992px) {
+  .about__text {
+    padding-inline: 100px;
+  }
+}
+
+@media (width <=576px) {
+  .about__text {
+    padding-inline: 20px;
+  line-height: 38px;
+  }
+}
+
+
+.about__button{
+  padding: 11px 24px;
+}

@@ -1,0 +1,70 @@
+.page {
+  color: var(--main-color);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding: 180px;
+  scrollbar-gutter: stable;
+}
+
+.page__body {
+  min-width: 375px;
+  background-color: var(--bg-color);
+}
+
+.page__body--no-scroll {
+  overflow: hidden;
+}
+
+img {
+  object-fit: cover;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus {
+  outline: 1px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.container {
+  width: min(1440px, 100% - 15px *2);
+  margin: 0 auto;
+}
+
+@media (width <=480px) {
+  .container {
+    width: min(1440px, 100% - 12px * 2);
+  }
+}
+
+.main-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 36px;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  transition: var(--transition-time);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+}
+
+@media (any-hover: hover) {
+  .main-button:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+
+
+.main-button__icon {
+  fill: currentColor;
+}

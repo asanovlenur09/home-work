@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+  <script src="./js/fslightbox.js" type="module"></script>
+  <script src="./js/index.js" type="module"></script>
+  <title>Nike</title>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__burger burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="header__menu">
+        <input class="burger__check" type="checkbox">
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+      </div>
+      <nav class="menu header__menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">New Arrival</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#men">Men</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#women">Women</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#kids">Kids</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__logo logo" href="#">
+        <img class="logo__img" width="80" height="32" src="./icons/Logo-nike.svg" alt="Логотип Nike">
+      </a>
+      <div class="header__controls">
+        <button class="header__controls-button" href="#">
+          <svg width="24" height="24">
+            <use class="controls__icon" href="./icons/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <button class="header__controls-button" href="#">
+          <svg width="24" height="24">
+            <use class="controls__icon" href="./icons/sprite.svg#account"></use>
+          </svg>
+        </button>
+        <button class="header__controls-button" href="#">
+          <svg width="24" height="24">
+            <use class="controls__icon" href="./icons/sprite.svg#cart"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__color">
+          <img class="hero__line" src="./icons/line-color.svg" alt="">
+          <div class="hero__line-2"></div>
+          <button class="hero__color-button hero__color-button--1" aria-label="выбрать коричневый цвет"></button>
+          <button class="hero__color-button hero__color-button--2" aria-label="выбрать фиолетовый цвет" ></button>
+          <button class="hero__color-button hero__color-button--3" aria-label="выбрать синий цвет" ></button>
+          <button class="hero__color-button hero__color-button--4" aria-label="выбрать черный цвет" ></button>
+          <button class="hero__color-button hero__color-button--5" aria-label="выбрать красный цвет" ></button>
+          <button class="hero__color-button hero__color-button--6" aria-label="выбрать салатовый цвет" ></button>
+          <button class="hero__color-button hero__color-button--7" aria-label="выбрать зеленый цвет" ></button>
+        </div>
+
+        <p class="hero__background-text">AIR JORDAN 1
+          RETRO HIGH OG DUNK HIGH</p>
+        <div class="hero__product">
+          <img class="hero__product-img" width="560" height="308" src="./images/air-jordan-1.png"
+            alt="Кроссовки-air-jordan-1">
+          <img class="hero__product-line" width="560" height="36" src="./icons/line-360.svg" alt="декоративная линия">
+          <button class="hero__product-button-360">
+            <svg width="40" height="40">
+              <use class="hero__product-icon-360" href="./icons/arrow-360.svg#arrow-360"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title">AIR JORDAN 1 RETRO HIGH OG</h1>
+          <div class="hero__content-info">
+            <h3 class="hero__content-price">$275</h3>
+            <div class="hero__content-sizes">
+              <p class="hero__content-sizes-text">Size</p>
+              <button class="hero__content-sizes-button">
+                41
+              </button>
+              <button class="header__controls-button" href="#">
+                <svg width="24" height="24">
+                  <use class="controls__icon" href="./icons/sprite.svg#cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="hero__content-button-details main-button">
+            More Details
+            <svg width="24" height="24">
+              <use class="main-button__icon" href="./icons/arrow-right.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-slider">
+      <div class="container products-slider__container">
+        <div class="product-slider__nav">
+          <button class="product-slider__button product-slider__button--prev">
+            <svg class="product-slider__button-svg product-slider__button-svg--previous" width="32" height="32">
+              <use class="product-slider__button-svg" href="./icons/arrow-button-slide.svg#arrow-nav"></use>
+            </svg>
+            Previous
+          </button>
+          <button class="product-slider__button product-slider__button--next">
+            Next
+            <svg class="product-slider__button-svg product-slider__button-svg--next" width="32" height="32">
+              <use href="./icons/arrow-button-slide.svg#arrow-nav"></use>
+            </svg>
+          </button>
+        </div>
+
+
+
+
+
+        <div class="product-slider__list">
+          <a class="product-slider__link" href="#">
+            <div class="product-slider__card product-slider__card--1">
+              <img class="product-slider__image product-slider__image--1" loading="lazy"
+                src="./images/product-nike-1.png" alt="кроссовки Nike Cosmic Unity 2">
+              <h3 class="product-slider__title">Nike Cosmic Unity 2</h3>
+            </div>
+          </a>
+          <a class="product-slider__link" href="#">
+            <div class="product-slider__card product-slider__card--2">
+              <img class="product-slider__image product-slider__image--2" loading="lazy"
+                src="./images/product-nike-2.png" alt="кроссовки Nike sb dunk high">
+              <h3 class="product-slider__title">Nike sb dunk high</h3>
+            </div>
+          </a>
+          <a class="product-slider__link" href="#">
+            <div class="product-slider__card product-slider__card--3">
+              <img class="product-slider__image product-slider__image--3" loading="lazy"
+                src="./images/product-nike-3.png" alt="кроссовки Nike dynamo go se">
+              <h3 class="product-slider__title">Nike dynamo go se</h3>
+            </div>
+          </a>
+
+
+        </div>
+      </div>
+
+      <div class=" product-slider__decoration">
+        <div class="product-slider__decoration-line product-slider__decoration-line--background">
+          <p class="product-slider__decoration-text">Flash</p>
+          <p class="product-slider__decoration-text">Flash</p>
+          <p class="product-slider__decoration-text">Flash</p>
+          <p class="product-slider__decoration-text">Flash</p>
+        </div>
+        <div class="product-slider__decoration-line product-slider__decoration-line--accent">
+          <p class="product-slider__decoration-text">Flash</p>
+          <p class="product-slider__decoration-text">Flash</p>
+          <p class="product-slider__decoration-text">Flash</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about__container">
+        <h2 class="about__title">
+          <span class="about__title-after">THE ESSENCE</span>
+          <span class="title-accent">HANDCRAFTED</span>
+          <span class="about__title-before">OF FOOTWEAR.</span>
+        </h2>
+
+        <p class="about__text"> In terms of footwear, we are the first in Canada to have opened not simple "shops" but
+          real company outlets that offer the same service as the artisan shops of yesteryear: this to make you go
+          without
+          fail every time you want to buy a pair of handmade genuine leather shoes. Without fear of making mistakes
+          and
+          with the certainty that you will be able to wear them comfortably from the beginning. <br>
+          Are you also curious to find out why hundreds of people choose us every day?</p>
+
+        <button class="main-button about__button">
+          Find Out More
+          <svg width="24" height="24">
+            <use class="main-button__icon" href="./icons/arrow-right.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="sellers">
+      <div class="container sellers__container">
+        <div class="about__background-picture">
+        </div>
+        <div class="sellers__title-wrapper">
+          <h2 class="sellers__title">Best sellers</h2>
+        </div>
+        <div class="sellers__list">
+          <a id="women" class="sellers__card-link" href="#">
+            <div class="sellers__card">
+              <h3 class="sellers__card-title">Women</h3>
+              <img class="sellers__card-img" src="./images/Sellers-Women.jpg" loading="lazy" width="416" height="550"
+                loading="lazy" alt="Девушка в кроссовках">
+            </div>
+          </a>
+
+
+          <a id="kids" class="sellers__card-link" href="#">
+            <div class="sellers__card">
+              <h3 class="sellers__card-title">Kids</h3>
+              <img class="sellers__card-img" src="./images/Sellers-Kids.jpg" loading="lazy" width="416" height="550"
+                loading="lazy" alt="Ребенок держит кроссовки">
+            </div>
+          </a>
+
+
+          <a id="men" class="sellers__card-link" href="#">
+            <div class="sellers__card">
+              <h3 class="sellers__card-title">Men</h3>
+              <img class="sellers__card-img" src="./images/Sellers-Men.jpg" loading="lazy" width="416" height="550"
+                loading="lazy" alt="Мужчина в кроссовках">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sports-products">
+      <div class="container sports-products__container">
+        <h2 class="sports-products__title">SPORTS</h2>
+        <div class="sports__products-list">
+          <div class="sports-products-wrapper">
+            <a class="sports-products__product-link" href="#">
+              <img class="sports-products__product-img" src="./images/Product-1.png" loading="lazy" width="400"
+                height="200" alt="кроссовки - Air Max Plus">
+              <h3 class="sports-products__product-title">Nike Air Max Plus 3</h3>
+            </a>
+            <a class="sports-products__product-link" href="#">
+              <img class="sports-products__product-img" src="./images/Product-2.png" loading="lazy" width="400"
+                height="200" alt="кроссовки - Air Jordan 4 Retro Lightning">
+              <h3 class="sports-products__product-title">Air Jordan 4 Retro Lightning (Premium Batch)</h3>
+            </a>
+          </div>
+          <div class="sports-products-wrapper sports-products-wrapper--right">
+            <a class="sports-products__product-link" href="#">
+              <img class="sports-products__product-img" src="./images/Product-3.png" loading="lazy" width="400"
+                height="200" alt="кроссовки - Air Jordan 13 Retro Court Purple">
+              <h3 class="sports-products__product-title">Air Jordan 13 Retro Court Purple (Reflective)</h3>
+            </a>
+            <a class="sports-products__product-link" href="#">
+              <img class="sports-products__product-img" src="./images/Product-4.png" loading="lazy" width="400"
+                height="200" alt="кроссовки - Air Jordan 1 AJKO Blue Red">
+              <h3 class="sports-products__product-title">Air Jordan 1 AJKO Blue Red</h3>
+            </a>
+          </div>
+          <div class="sports-products-wrapper">
+            <a class="sports-products__product-link" href="#">
+              <img class="sports-products__product-img" src="./images/Product-5.png" loading="lazy" width="400"
+                height="200" alt="кроссовки - Yeezy Boost 350 V2 MX Rock">
+              <h3 class="sports-products__product-title">Yeezy Boost 350 V2 MX Rock (Real Boost)</h3>
+            </a>
+            <a class="sports-products__product-link" href="#">
+              <img class="sports-products__product-img" src="./images/Product-6.png" loading="lazy" width="400"
+                height="200" alt="кроссовки - Vans Old Skool Suede Honey Gold">
+              <h3 class="sports-products__product-title">Vans Old Skool Suede Honey Gold</h3>
+            </a>
+          </div>
+        </div>
+
+        <!-- =============swiper===========================swiper=================================== -->
+
+        <div class="sports-product__slider-wrapper">
+          <button class="sports-product__slider-button sports-product__slider-button--prev"
+            aria-label="Предыдущий слайд">
+            <svg width="40" height="40">
+              <use class="sports-product__slider-button-icon" href="./icons/main-sprite.svg#double-arrow"></use>
+            </svg>
+          </button>
+          <div class="swiper sports-product__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="sports-products__product-link" href="#">
+                  <img class="sports-products__product-img" src="./images/Product-1.png" loading="lazy" width="400"
+                    height="200" alt="кроссовки - Air Max Plus">
+                  <h3 class="sports-products__product-title">Nike Air Max Plus 3</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sports-products__product-link" href="#">
+                  <img class="sports-products__product-img" src="./images/Product-2.png" loading="lazy" width="400"
+                    height="200" alt="кроссовки - Air Max Plus">
+                  <h3 class="sports-products__product-title">Air Jordan 4 Retro Lightning (Premium Batch)</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sports-products__product-link" href="#">
+                  <img class="sports-products__product-img" src="./images/Product-3.png" loading="lazy" width="400"
+                    height="200" alt="кроссовки - Air Max Plus">
+                  <h3 class="sports-products__product-title">Air Jordan 13 Retro Court Purple (Reflective)</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sports-products__product-link" href="#">
+                  <img class="sports-products__product-img" src="./images/Product-4.png" loading="lazy" width="400"
+                    height="200" alt="кроссовки - Air Max Plus">
+                  <h3 class="sports-products__product-title">Air Jordan 1 AJKO Blue Red</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sports-products__product-link" href="#">
+                  <img class="sports-products__product-img" src="./images/Product-5.png" loading="lazy" width="400"
+                    height="200" alt="кроссовки - Air Max Plus">
+                  <h3 class="sports-products__product-title">Yeezy Boost 350 V2 MX Rock (Real Boost)</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sports-products__product-link" href="#">
+                  <img class="sports-products__product-img" src="./images/Product-6.png" loading="lazy" width="400"
+                    height="200" alt="кроссовки - Air Max Plus">
+                  <h3 class="sports-products__product-title">Vans Old Skool Suede Honey Gold</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button class="sports-product__slider-button sports-product__slider-button--next"
+            aria-label="Следующий слайд">
+            <svg width="40" height="40">
+              <use class="sports-product__slider-button-icon" href="./icons/main-sprite.svg#double-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      <!-- ================================================================================= -->
+
+      <button class="main-button sports-products__button">
+      Lets Discover Morе
+        <svg width="24" height="24">
+          <use class="main-button__icon" href="./icons/arrow-right.svg#arrow-right"></use>
+        </svg>
+      </button>
+      </div>
+    </section>
+
+    <section class="modern-shoes">
+      <div class="container modern-shoes__container">
+        <div class="modern-shoes__picture">
+          <img class="modern-shoes__img" src="./images/modern-shoes.png" loading="lazy" width="385" height="357"
+            alt="кроссовки">
+        </div>
+        <div class="modern-shoes__content">
+          <h2 class="modern-shoes__title">WE PROVIDE MODERN SHOES</h2>
+          <p class="modern-shoes__text">
+            Design for the way you live your life. Atoms are beautiful in their
+            simplicity, supporting your feet with absolute comfort.
+          </p>
+          <button class="main-button modern-shoes__button">
+            Explore More
+            <svg width="24" height="24">
+              <use class="main-button__icon" href="./icons/arrow-right.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="nike-style">
+      <div class="container nike-style__container">
+        <h2 class="nike-style__title">
+          Our Favorite <span class="nike-style__title-accent">Nike</span> styles<span
+            class="nike-style__title-dot">.</span>
+        </h2>
+        <div class="nike-style__product-wrapper">
+          <div class="nike-style__product">
+            <a class="nike-style__product-link" href="#">
+              <h3 class="nike-style__product-title">
+                NIKE Mercurial Superfly
+              </h3>
+              <p class="nike-style__product-price">
+                $271
+              </p>
+              <img class="nike-style__product-img nike-style__product-img--mercurial-superfly"
+                src="./images/nike-style-product-mercurial-superfly.png" loading="lazy" width="240" height="145"
+                alt="кроссовки NIKE Mercurial Superfly">
+            </a>
+          </div>
+          <div class="nike-style__product">
+            <a class="nike-style__product-link" href="#">
+              <h3 class="nike-style__product-title">
+                NIKE Air Zoom Alphafly
+              </h3>
+              <p class="nike-style__product-price">
+                $271
+              </p>
+              <img class="nike-style__product-img nike-style__product-img--ir-zoom-alphafly"
+                src="./images/nike-style-product-air-zoom-alphafly.png" loading="lazy" width="235" height="145"
+                alt="кроссовки NIKE Air Zoom Alphafly">
+            </a>
+          </div>
+          <div class="nike-style__product">
+            <a class="nike-style__product-link" href="#">
+              <h3 class="nike-style__product-title">
+                NIKE Dunk High
+              </h3>
+              <p class="nike-style__product-price">
+                $271
+              </p>
+              <img class="nike-style__product-img nike-style__product-img--dunk-high"
+                src="./images/nike-style-product-dunk-high.png" loading="lazy" width="235" height="145"
+                alt="кроссовки NIKE Dunk High">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brands">
+      <div class="container brands__container">
+        <a class="brands__link" href="#">
+          <img class="brends__logo-img" src="./icons/brands-logo/brand-logo-adidas.svg" width="100" height="67"
+            alt="логотип adidas">
+        </a>
+        <a class="brands__link" href="#">
+          <img class="brands__logo-img" src="./icons/brands-logo/brand-logo-nike.svg" width="100" height="52"
+            alt="логотип nike">
+        </a>
+        <a class="brands__link" href="#">
+          <img class="brands__logo-img" src="./icons/brands-logo/brand-logo-puma.svg" width="100" height="50"
+            alt="логотип пума">
+        </a>
+        <a class="brands__link" href="#">
+          <img class="brands__logo-img" src="./icons/brands-logo/brand-logo-converse.svg" width="100" height="67"
+            alt="логотип converse">
+        </a>
+        <a class="brands__link" href="#">
+          <img class="brands__logo-img" src="./icons/brands-logo/brand-logo-reebok.svg" width="100" height="56"
+            alt="логотип reebok">
+        </a>
+        <a class="brands__link" href="#">
+          <img class="brands__logo-img" src="./icons/brands-logo/brand-logo-vans.svg" width="100" height="41"
+            alt="логотип vans">
+        </a>
+        <a class="brands__link" href="#">
+          <img class="brands__logo-img" src="./icons/brands-logo/brand-logo-jordan.svg" width="100" height="100"
+            alt="логотип jordan">
+        </a>
+        <a class="brands__link" href="#">
+          <img class="brands__logo-img" src="./icons/brands-logo/brand-logo-nb.svg" width="100" height="55"
+            alt="логотип new balance">
+        </a>
+      </div>
+    </section>
+
+    <section class="best-shoes">
+      <div class="container best-shoes__container">
+        <div class="best-shoes__content">
+          <h2 class="best-shoes__title">BEST SHOES FOR THE BEST PEOPLE</h2>
+          <p class="best-shoes__text">
+            Design for the way you live your life. Atoms are beautiful in
+            their simplicity, supporting your feet with absolute comfort.
+          </p>
+
+          <button class="main-button best-shoes-button">Explore More
+            <svg width="24" height="24">
+              <use class="main-button__icon" href="./icons/arrow-right.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="best-shoes__picture">
+          <img class="best-shoes__picture-img" src="./images/Box-1.jpg" loading="lazy" width="240" height="400" alt="">
+          <div class="best-shoes__picture-wrapper">
+            <img class="best-shoes__picture-img" src="./images/Box-2.jpg" loading="lazy" width="320" height="160"
+              alt="">
+            <img class="best-shoes__picture-img best-shoes__picture-img--margin" loading="lazy" src="./images/Box-3.jpg"
+              width="240" height="320" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="visionaries">
+      <div class="container visionaries__container">
+        <div class="visionaries__picture">
+          <img src="./images/visionaries-picture.png" loading="lazy" width="416" height="416" alt="">
+        </div>
+        <div class="visionaries__content">
+          <h2 class="visionaries__title">WE ARE VISIONARIES</h2>
+          <p class="visionaries__text">
+            xploring the boundaries of footwear with expert design knowledge and <br>
+            manufacture in mind.
+          </p>
+
+          <p class="visionaries__text">
+            <span class="visionaries__text-title">INSIGHTFUL CREATIVE DIRECTION :</span> Uniting Consumer Insights with
+            progressive
+            manufacturing methods, we create comprehensive plans to outpace your competition.
+          </p>
+
+          <p class="visionaries__text">
+            <span class="visionaries__text-title">PURPOSEFUL DESIGN :</span> We create products that captivate consumers
+            and elevate brands. applying a refined sense of beauty and style, our designs are alluring.
+          </p>
+
+          <p class="visionaries__text">
+            <span class="visionaries__text-title">RELENTLESS INNOVATION :</span> We live to challenge the boundaries of
+            convention <br>and take advantage of every breakthrough opportunity big or small. we’ll help you define the
+            cutting-edge of your business.
+          </p>
+          <button class="main-button visionaries__button">
+            Customization Available
+            <svg width="24" height="24">
+              <use class="main-button__icon" href="./icons/arrow-right.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="nikeclub-banner">
+      <div class="container nikeclub-banner__container">
+        <div class="nikeclub-banner__wrapper">
+          <div class="nikeclub-banner__content">
+            <h3 class="nikeclub-banner__title">JOIN OUR NIKECLUB
+              & GET 15% OFF</h3>
+            <p class="nikeclub-banner__text">Sign up for free. Join the community, Never pay for shipping.</p>
+            <button class="main-button nikeclub-banner__button">
+              Join Us
+              <svg width="24" height="24">
+                <use class="main-button__icon" href="./icons/arrow-right.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <img class="nikeclub-banner-logo" src="./images/nikeclub-logo.png" loading="lazy" width="227" height="90"
+            alt="логотип nike">
+          <img class="logo__img nikeclub-banner-logo-sm" width="80" height="32" src="./icons/Logo-nike.svg"
+            alt="Логотип Nike">
+        </div>
+        <img class="nikeclub-banner-decor-img" src="./images/nikeclub-decor.png" loading="lazy" width="570" height="376"
+          alt="черный кроссовок - декорация">
+      </div>
+    </section>
+    <section class="features">
+      <div class="container features__container">
+        <div class="features__card">
+          <svg width="24" height="24">
+            <use class="feature__card-icon" href="./icons/features-sprite.svg#truck"></use>
+          </svg>
+          <div class="features__card-content">
+            <h5 class="features__card-titile">Free Delivery</h5>
+            <p class="feature__card-text">from $29.99</p>
+          </div>
+        </div>
+
+        <div class="features__card">
+          <svg width="24" height="24">
+            <use class="feature__card-icon" href="./icons/features-sprite.svg#clock"></use>
+          </svg>
+          <div class="features__card-content">
+            <h5 class="features__card-titile">Free Withdrawal 1h</h5>
+            <p class="feature__card-text">in store</p>
+          </div>
+        </div>
+        <div class="features__card">
+          <svg width="24" height="24">
+            <use class="feature__card-icon" href="./icons/features-sprite.svg#shield"></use>
+          </svg>
+          <div class="features__card-content">
+            <h5 class="features__card-titile">100% Secure Payment</h5>
+            <p class="feature__card-text">at your service</p>
+          </div>
+        </div>
+
+        <div class="features__card">
+          <svg width="24" height="24">
+            <use class="feature__card-icon" href="./icons/features-sprite.svg#box"></use>
+          </svg>
+          <div class="features__card-content">
+            <h5 class="features__card-titile">Returns & Exchanges</h5>
+            <p class="feature__card-text">offered 365 days</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__content">
+        <div class="footer__newsletter">
+          <h4 class="footer__title">Let’s stay in touch</h4>
+
+          <form class="footer__newsletter-form">
+            <input type="email" class="footer__newsletter-form-input" placeholder="Enter Email...">
+            <button type="submit" class="footer__newsletter-form-button">
+              Subscribe
+            </button>
+          </form>
+
+          <img class="footer__logo" src="./images/footer-nike-logo.png" loading="lazy" alt="логотип nike">
+        </div>
+
+        <div class="footer__menu-wrapper">
+          <nav class="footer__menu">
+            <h5 class="footer__menu-title">SHOP</h5>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#men">Mens</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#women">Womens</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">New Arrival</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__menu">
+            <h5 class="footer__menu-title">OUR SERVICES</h5>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#men">Customize your products</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#women">Gift Card</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Maintain & Repair</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__menu">
+            <h5 class="footer__menu-title">NEED HELP ?</h5>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#men">My Account</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#women">Shipping</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Return & Exchanges</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">FAQs</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Rewards</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Loyalty program</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">How to choose your product?</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Sports Trends</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer__menu">
+            <h5 class="footer__menu-title">CONTACT US</h5>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#men">Find a Store</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#women">Contact Us</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Terms & Conditions</a>
+              </li>
+            </ul>
+          </nav>
+
+
+          <nav class="footer__menu">
+            <h5 class="footer__menu-title">OUR ENTERPRISE</h5>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#men">Who are we?</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#women">Press and news</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Our alliances</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+
+
+      <!-- этот блок в фигме отображается как svg  -->
+
+      <!-- <div class="footer__bottom">
+        <p class="footer__bottom-copyright">
+          2022 Nike, inc All Rights Reserved
+        </p>
+        <img src="./icons/social-logo-sprite.svg" alt="">
+      </div> -->
+      </div>
+  </footer>
+</body>
+
+</html>
