@@ -4,6 +4,7 @@ export default class Modal {
       MODAL_WRAPPER: "modal",
     };
     this.config = Object.assign(defaultConfig, config);
+    this.page = document.documentElement;
     this.modal = document.querySelector(`.${this.config.MODAL_WRAPPER}`);
     this.body = document.querySelector(`.${this.config.PAGE_BODY}`);
     this.speed = 0;
@@ -106,11 +107,11 @@ export default class Modal {
   }
 
   enableScroll() {
-    this.body.classList.remove(this.config.PAGE_BODY_NO_SCROLL);
+    this.page.classList.remove(this.config.PAGE_BODY_NO_SCROLL);
   }
 
   disableScroll() {
-    this.body.classList.add(this.config.PAGE_BODY_NO_SCROLL);
+    this.page.classList.add(this.config.PAGE_BODY_NO_SCROLL);
   }
 
   catchFocus(event) {

@@ -6,6 +6,10 @@
   scrollbar-gutter: stable;
 }
 
+.page__body--no-scroll {
+  overflow: hidden;
+}
+
 .page__body {
   min-width: 375px;
   background-color: var(--bg-color);

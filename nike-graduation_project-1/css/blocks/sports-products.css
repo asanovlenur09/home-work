@@ -1,5 +1,3 @@
-
-
 @media (width > 768px) {
   .sports-products {
     padding-bottom: 238px;
@@ -34,54 +32,32 @@
   }
 }
 
-
-.sports-products__title {
-  font-family: var(--font3);
-  font-size: 96px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: capitalize;
-  text-align: center;
-  transform: rotate(-10.675deg);
-  position: relative;
+.sports-products__title-img{
+  display: block;
+  margin: 0 auto;
 }
 
 @media (width >768px) {
-  .sports-products__title {
+  .sports-products__title-img {
     margin-bottom: 121px;
   }
 }
 
-
 @media (width <=768px) {
-  .sports-products__title {
-    padding-right: 100px;
+  .sports-products__title-img {
+    padding-right: 50px;
     margin-bottom: 100px;
   }
 
 }
 
 @media (width <=576px) {
-  .sports-products__title {
+  .sports-products__title-img {
     margin-bottom: 70px;
-    font-size: 68px;
   }
-
 }
 
 
-
-.sports-products__title::after {
-  content: "TIME";
-  position: absolute;
-  transform: translate(-40%, 50%);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--main-color);
-  font-family: var(--font3);
-  text-transform: capitalize;
-  color: transparent;
-}
 
 @media (width <=992px) {
   .sports__products-list {
@@ -137,7 +113,7 @@
 
   @media (any-hover: hover) {
     .sports-products__product-link:hover {
-      transform: translateY(-15px);
+      transform: translateY(-10px);
     }
 
     .sports-products__product-link:hover:before {
@@ -148,13 +124,19 @@
 
 }
 
+
 .sports-products__product-link {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   gap: 16px;
-  width: 100%;
+}
+
+@media (width <=992px) {
+  .sports-products__product-link {
+    width: 100%;
+  }
 }
 
 

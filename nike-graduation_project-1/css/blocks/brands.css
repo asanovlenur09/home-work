@@ -21,3 +21,11 @@
     gap: 50px 80px;
   }
 }
+
+.brands__link{
+    transition: opacity var(--transition-time), transform var(--transition-time) ;
+}
+.brands__link:hover{
+  opacity: 0.6;
+  transform: translateY(-3px);
+}

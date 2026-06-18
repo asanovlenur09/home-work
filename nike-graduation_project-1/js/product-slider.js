@@ -13,8 +13,8 @@ export const productSlider = () => {
       forceToAxis: true
     },
     navigation: {
-      prevEl: ".sports-product__slider-button--prev",
-      nextEl: ".sports-product__slider-button--next"
+      prevEl: ".slider-button-prev",
+      nextEl: ".slider-button-next"
     }
   });
 };

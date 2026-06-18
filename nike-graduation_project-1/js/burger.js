@@ -1,6 +1,7 @@
 export default class BurgerMenu {
 	constructor(config, headerFixedInstance = null) {
 		this.config = config;
+		this.page = document.documentElement;
 		this.burgerButton = document.querySelector(`.${this.config.BURGER}`);
 		this.burgerMenu = document.querySelector(`.${this.config.HEADER_MENU}`);
 		this.body = document.querySelector(`.${this.config.PAGE_BODY}`);
@@ -72,7 +73,7 @@ export default class BurgerMenu {
 			: this.config.lABEL.OPEN;
 		this.burgerButton.ariaExpanded = isOpen;
 		this.burgerMenu.classList.toggle(this.config.HEADER_MENU_OPEN, isOpen);
-		this.body.classList.toggle(this.config.PAGE_BODY_NO_SCROLL, isOpen);
+		this.page.classList.toggle(this.config.PAGE_BODY_NO_SCROLL, isOpen);
 
 		if (this.main) {
 			this.main.style.pointerEvents = isOpen ? 'none' : '';
@@ -93,7 +94,7 @@ export default class BurgerMenu {
 		this.burgerButton.ariaLabel = this.config.lABEL.OPEN;
 		this.burgerButton.ariaExpanded = false;
 		this.burgerMenu.classList.remove(this.config.HEADER_MENU_OPEN);
-		this.body.classList.remove(this.config.PAGE_BODY_NO_SCROLL);
+		this.page.classList.remove(this.config.PAGE_BODY_NO_SCROLL);
 
 		if (this.main) {
 			this.main.style.pointerEvents = '';

@@ -147,11 +147,14 @@
   .menu__link {
     font-size: 20px;
   }
+
+  .menu__link:hover {
+    color: initial;
+  }
 }
 
 .header__controls {
   display: flex;
-  /* stroke: var(--accent-color); */
 }
 
 .controls__icon {

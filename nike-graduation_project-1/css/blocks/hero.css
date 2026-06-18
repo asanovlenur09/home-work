@@ -250,13 +250,9 @@
   }
 }
 
-@media (width <=992px) {
+@media (width <=420px) {
   .hero__color {
-    top: -15px;
-  }
-
-  .hero__line-2 {
-    height: 200px;
+    top: -25px;
   }
 }
 
@@ -409,7 +405,6 @@
 }
 
 .hero__content-sizes-button {
-  position: relative;
   margin-right: 57px;
   margin-left: 19px;
   font-family: var(--font5);
@@ -418,6 +413,14 @@
   font-weight: 400;
   line-height: normal;
   color: var(--main-color);
+  transition: color var(--transition-time);
+  position: relative;
+}
+
+@media (any-hover: hover) {
+  .hero__content-sizes-button:hover {
+    color: var(--accent-color);
+  }
 }
 
 @media (width <=992px) {
@@ -428,15 +431,12 @@
   }
 }
 
+  .hero__content-sizes-button-icon {
+    position: absolute;
+    right: -25px;
+    fill: currentColor;
+  }
 
-.hero__content-sizes-button::after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  background: url(../../icons/arrow-bottom-icon.svg) 50% / cover no-repeat;
-  max-width: 32px;
-  max-height: 32px;
-}
 
 .hero__content-button-details {
   font-size: 12px;

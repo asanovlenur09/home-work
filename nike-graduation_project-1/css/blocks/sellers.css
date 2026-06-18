@@ -157,7 +157,7 @@
 
   .sellers__card-link:hover {
     box-shadow: 0 0 100px var(--accent-color);
-    transform: translateY(-30px);
+    transform: translateY(-10px);
     z-index: 1;
     overflow: hidden;
   }
@@ -171,6 +171,11 @@
 
 }
 
+.sellers__card-img {
+  display: block;
+}
+
+
 
 .sellers__card-title {
   text-align: center;
@@ -182,6 +187,12 @@
   font-weight: 700;
   line-height: 64px;
   color: transparent;
+}
+
+@media (width <=490px) {
+  .sellers__card-title {
+    font-size: 40px;
+  }
 }
 
 .sellers__card-title {

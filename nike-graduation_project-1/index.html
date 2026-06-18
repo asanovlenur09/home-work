@@ -41,12 +41,12 @@
         <img class="logo__img" width="80" height="32" src="./icons/Logo-nike.svg" alt="Логотип Nike">
       </a>
       <div class="header__controls">
-        <button class="header__controls-button" href="#">
+        <button class="header__controls-button">
           <svg width="24" height="24">
             <use class="controls__icon" href="./icons/sprite.svg#search"></use>
           </svg>
         </button>
-        <button class="header__controls-button" href="#">
+        <button class="header__controls-button">
           <svg width="24" height="24">
             <use class="controls__icon" href="./icons/sprite.svg#account"></use>
           </svg>
@@ -67,12 +67,12 @@
           <img class="hero__line" src="./icons/line-color.svg" alt="">
           <div class="hero__line-2"></div>
           <button class="hero__color-button hero__color-button--1" aria-label="выбрать коричневый цвет"></button>
-          <button class="hero__color-button hero__color-button--2" aria-label="выбрать фиолетовый цвет" ></button>
-          <button class="hero__color-button hero__color-button--3" aria-label="выбрать синий цвет" ></button>
-          <button class="hero__color-button hero__color-button--4" aria-label="выбрать черный цвет" ></button>
-          <button class="hero__color-button hero__color-button--5" aria-label="выбрать красный цвет" ></button>
-          <button class="hero__color-button hero__color-button--6" aria-label="выбрать салатовый цвет" ></button>
-          <button class="hero__color-button hero__color-button--7" aria-label="выбрать зеленый цвет" ></button>
+          <button class="hero__color-button hero__color-button--2" aria-label="выбрать фиолетовый цвет"></button>
+          <button class="hero__color-button hero__color-button--3" aria-label="выбрать синий цвет"></button>
+          <button class="hero__color-button hero__color-button--4" aria-label="выбрать черный цвет"></button>
+          <button class="hero__color-button hero__color-button--5" aria-label="выбрать красный цвет"></button>
+          <button class="hero__color-button hero__color-button--6" aria-label="выбрать салатовый цвет"></button>
+          <button class="hero__color-button hero__color-button--7" aria-label="выбрать зеленый цвет"></button>
         </div>
 
         <p class="hero__background-text">AIR JORDAN 1
@@ -95,8 +95,13 @@
               <p class="hero__content-sizes-text">Size</p>
               <button class="hero__content-sizes-button">
                 41
+                <svg class="hero__content-sizes-button-icon" width="32" height="32">
+                  <use href="./icons/arrow-bottom-icon.svg#arrow-bottom"></use>
+                </svg>
+                
               </button>
-              <button class="header__controls-button" href="#">
+              
+              <button class="header__controls-button">
                 <svg width="24" height="24">
                   <use class="controls__icon" href="./icons/sprite.svg#cart"></use>
                 </svg>
@@ -116,13 +121,13 @@
     <section class="products-slider">
       <div class="container products-slider__container">
         <div class="product-slider__nav">
-          <button class="product-slider__button product-slider__button--prev">
+          <button class="product-slider__button slider-button-prev">
             <svg class="product-slider__button-svg product-slider__button-svg--previous" width="32" height="32">
               <use class="product-slider__button-svg" href="./icons/arrow-button-slide.svg#arrow-nav"></use>
             </svg>
             Previous
           </button>
-          <button class="product-slider__button product-slider__button--next">
+          <button class="product-slider__button slider-button-next">
             Next
             <svg class="product-slider__button-svg product-slider__button-svg--next" width="32" height="32">
               <use href="./icons/arrow-button-slide.svg#arrow-nav"></use>
@@ -131,36 +136,153 @@
         </div>
 
 
+        <!-- =============swiper===========================swiper=================================== -->
+
+        <div class="product-slider__wrapper">
+
+          <div class="swiper sports-product__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+
+                <div class="product-slider__list">
+                  <a class="product-slider__link" href="#">
+                    <div class="product-slider__card product-slider__card--1">
+                      <img class="product-slider__image product-slider__image--1" loading="lazy"
+                        src="./images/product-nike-1.png" width="229" height="102" alt="кроссовки Nike Cosmic Unity 2">
+                      <h3 class="product-slider__title">Nike Cosmic Unity 2</h3>
+                    </div>
+                  </a>
+                  <a class="product-slider__link" href="#">
+                    <div class="product-slider__card product-slider__card--2">
+                      <img class="product-slider__image product-slider__image--2" loading="lazy"
+                        src="./images/product-nike-2.png" width="229" height="102" alt="кроссовки Nike sb dunk high">
+                      <h3 class="product-slider__title">Nike sb dunk high</h3>
+                    </div>
+                  </a>
+                  <a class="product-slider__link" href="#">
+                    <div class="product-slider__card product-slider__card--3">
+                      <img class="product-slider__image product-slider__image--3" loading="lazy"
+                        src="./images/product-nike-3.png" width="229" height="102" alt="кроссовки Nike dynamo go se">
+                      <h3 class="product-slider__title">Nike dynamo go se</h3>
+                    </div>
+                  </a>
+                </div>
 
 
+              </div>
+              <div class="swiper-slide">
+                <div class="product-slider__list">
+                  <a class="product-slider__link" href="#">
+                    <div class="product-slider__card product-slider__card--4">
+                      <img class="product-slider__image product-slider__image--4" loading="lazy"
+                        src="./images/product-nike-4.png" width="229" height="102" alt="кроссовки Nike Air Max Plus 3">
+                      <h3 class="product-slider__title">Nike Air Max Plus 3</h3>
+                    </div>
+                  </a>
+                  <a class="product-slider__link" href="#">
+                    <div class="product-slider__card product-slider__card--5">
+                      <img class="product-slider__image product-slider__image--5" loading="lazy"
+                        src="./images/product-nike-5.png" width="229" height="102"
+                        alt="кроссовки Air Jordan 4 Retro Lightning">
+                      <h3 class="product-slider__title">Air Jordan 4 Retro Lightning</h3>
+                    </div>
+                  </a>
+                  <a class="product-slider__link" href="#">
+                    <div class="product-slider__card product-slider__card--6">
+                      <img class="product-slider__image product-slider__image--6" loading="lazy"
+                        src="./images/product-nike-6.png" width="229" height="102"
+                        alt="кроссовки Air Jordan 13 Retro Court Purple">
+                      <h3 class="product-slider__title">Air Jordan 13 Retro</h3>
+                    </div>
+                  </a>
+                </div>
 
-        <div class="product-slider__list">
-          <a class="product-slider__link" href="#">
-            <div class="product-slider__card product-slider__card--1">
-              <img class="product-slider__image product-slider__image--1" loading="lazy"
-                src="./images/product-nike-1.png" alt="кроссовки Nike Cosmic Unity 2">
-              <h3 class="product-slider__title">Nike Cosmic Unity 2</h3>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-slider__list">
+                  <a class="product-slider__link" href="#">
+                    <div class="product-slider__card product-slider__card--7">
+                      <img class="product-slider__image product-slider__image--7" loading="lazy"
+                        src="./images/product-nike-7.png" width="229" height="102"
+                        alt="кроссовки Air Jordan 1 AJKO Blue Red">
+                      <h3 class="product-slider__title">Air Jordan 1 AJKO Blue Red</h3>
+                    </div>
+                  </a>
+                  <a class="product-slider__link" href="#">
+                    <div class="product-slider__card product-slider__card--8">
+                      <img class="product-slider__image product-slider__image--8" loading="lazy"
+                        src="./images/product-nike-8.png" width="229" height="102"
+                        alt="кроссовки Yeezy Boost 350 V2 MX Rock">
+                      <h3 class="product-slider__title">Yeezy Boost 350 V2 MX Rock</h3>
+                    </div>
+                  </a>
+                  <a class="product-slider__link" href="#">
+                    <div class="product-slider__card product-slider__card--9">
+                      <img class="product-slider__image product-slider__image--9" width="229" height="102"
+                        loading="lazy" src="./images/product-nike-9.png"
+                        alt="кроссовки Vans Old Skool Suede Honey Gold">
+                      <h3 class="product-slider__title">Vans Old Skool</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
-          </a>
-          <a class="product-slider__link" href="#">
-            <div class="product-slider__card product-slider__card--2">
-              <img class="product-slider__image product-slider__image--2" loading="lazy"
-                src="./images/product-nike-2.png" alt="кроссовки Nike sb dunk high">
-              <h3 class="product-slider__title">Nike sb dunk high</h3>
-            </div>
-          </a>
-          <a class="product-slider__link" href="#">
-            <div class="product-slider__card product-slider__card--3">
-              <img class="product-slider__image product-slider__image--3" loading="lazy"
-                src="./images/product-nike-3.png" alt="кроссовки Nike dynamo go se">
-              <h3 class="product-slider__title">Nike dynamo go se</h3>
-            </div>
-          </a>
+          </div>
+        </div>
 
+        <!-- ==========================mobile======================================================= -->
+
+        <div class="product-slider__wrapper-mobile">
+          <div class="swiper sports-product__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+
+                <div class="product-slider__list">
+                  <a class="product-slider__link" href="#">
+                    <div class="product-slider__card product-slider__card--1">
+                      <img class="product-slider__image product-slider__image--1" loading="lazy"
+                        src="./images/product-nike-1.png" width="229" height="102" alt="кроссовки Nike Cosmic Unity 2">
+                      <h3 class="product-slider__title">Nike Cosmic Unity 2</h3>
+                    </div>
+                  </a>
+                </div>
+
+
+              </div>
+              <div class="swiper-slide">
+                <div class="product-slider__list">
+
+                  <a class="product-slider__link" href="#">
+                    <div class="product-slider__card product-slider__card--5">
+                      <img class="product-slider__image product-slider__image--5" loading="lazy"
+                        src="./images/product-nike-5.png" width="229" height="102"
+                        alt="кроссовки Air Jordan 4 Retro Lightning">
+                      <h3 class="product-slider__title">Air Jordan 4 Retro Lightning</h3>
+                    </div>
+                  </a>
+
+                </div>
+
+              </div>
+              <div class="swiper-slide">
+                <div class="product-slider__list">
+
+                  <a class="product-slider__link" href="#">
+                    <div class="product-slider__card product-slider__card--9">
+                      <img class="product-slider__image product-slider__image--9" width="229" height="102"
+                        loading="lazy" src="./images/product-nike-9.png"
+                        alt="кроссовки Vans Old Skool Suede Honey Gold">
+                      <h3 class="product-slider__title">Vans Old Skool</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
+        <!-- ================================================================================= -->
       </div>
-
       <div class=" product-slider__decoration">
         <div class="product-slider__decoration-line product-slider__decoration-line--background">
           <p class="product-slider__decoration-text">Flash</p>
@@ -174,7 +296,10 @@
           <p class="product-slider__decoration-text">Flash</p>
         </div>
       </div>
+
     </section>
+
+
 
     <section class="about">
       <div class="container about__container">
@@ -240,7 +365,7 @@
 
     <section class="sports-products">
       <div class="container sports-products__container">
-        <h2 class="sports-products__title">SPORTS</h2>
+        <img class="sports-products__title-img"  src="./images/sports-time-title.jpg" width="479" height="198" alt="заголовок sports time">
         <div class="sports__products-list">
           <div class="sports-products-wrapper">
             <a class="sports-products__product-link" href="#">
@@ -283,7 +408,7 @@
         <!-- =============swiper===========================swiper=================================== -->
 
         <div class="sports-product__slider-wrapper">
-          <button class="sports-product__slider-button sports-product__slider-button--prev"
+          <button class="sports-product__slider-button sports-product__slider-button--prev slider-button-prev"
             aria-label="Предыдущий слайд">
             <svg width="40" height="40">
               <use class="sports-product__slider-button-icon" href="./icons/main-sprite.svg#double-arrow"></use>
@@ -335,21 +460,21 @@
               </div>
             </div>
           </div>
-          <button class="sports-product__slider-button sports-product__slider-button--next"
+          <button class="sports-product__slider-button sports-product__slider-button--next slider-button-next"
             aria-label="Следующий слайд">
             <svg width="40" height="40">
               <use class="sports-product__slider-button-icon" href="./icons/main-sprite.svg#double-arrow"></use>
             </svg>
           </button>
         </div>
-      <!-- ================================================================================= -->
+        <!-- ================================================================================= -->
 
-      <button class="main-button sports-products__button">
-      Lets Discover Morе
-        <svg width="24" height="24">
-          <use class="main-button__icon" href="./icons/arrow-right.svg#arrow-right"></use>
-        </svg>
-      </button>
+        <button class="main-button sports-products__button">
+          Lets Discover Morе
+          <svg width="24" height="24">
+            <use class="main-button__icon" href="./icons/arrow-right.svg#arrow-right"></use>
+          </svg>
+        </button>
       </div>
     </section>
 
@@ -556,8 +681,8 @@
             <use class="feature__card-icon" href="./icons/features-sprite.svg#truck"></use>
           </svg>
           <div class="features__card-content">
-            <h5 class="features__card-titile">Free Delivery</h5>
-            <p class="feature__card-text">from $29.99</p>
+            <h5 class="features__card-title">Free Delivery</h5>
+            <p class="features__card-text">from $29.99</p>
           </div>
         </div>
 
@@ -566,8 +691,8 @@
             <use class="feature__card-icon" href="./icons/features-sprite.svg#clock"></use>
           </svg>
           <div class="features__card-content">
-            <h5 class="features__card-titile">Free Withdrawal 1h</h5>
-            <p class="feature__card-text">in store</p>
+            <h5 class="features__card-title">Free Withdrawal 1h</h5>
+            <p class="features__card-text">in store</p>
           </div>
         </div>
         <div class="features__card">
@@ -575,17 +700,17 @@
             <use class="feature__card-icon" href="./icons/features-sprite.svg#shield"></use>
           </svg>
           <div class="features__card-content">
-            <h5 class="features__card-titile">100% Secure Payment</h5>
-            <p class="feature__card-text">at your service</p>
+            <h5 class="features__card-title">100% Secure Payment</h5>
+            <p class="features__card-text">at your service</p>
           </div>
         </div>
 
         <div class="features__card">
           <svg width="24" height="24">
-            <use class="feature__card-icon" href="./icons/features-sprite.svg#box"></use>
+            <use class="features__card-icon" href="./icons/features-sprite.svg#box"></use>
           </svg>
           <div class="features__card-content">
-            <h5 class="features__card-titile">Returns & Exchanges</h5>
+            <h5 class="features__card-title">Returns & Exchanges</h5>
             <p class="feature__card-text">offered 365 days</p>
           </div>
         </div>
@@ -711,7 +836,7 @@
         </p>
         <img src="./icons/social-logo-sprite.svg" alt="">
       </div> -->
-      </div>
+    </div>
   </footer>
 </body>
 
