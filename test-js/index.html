@@ -1,0 +1,635 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./main.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Test</h1>
+  
+</body>
+
+<style>
+
+
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+</style>
+
+</html> -->
+
+
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arzon.ro — умный поиск выгодных покупок</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a href="#" class="logo">arzon<span>.ro</span></a>
+
+    <nav class="nav-links">
+      <a href="#search">Поиск</a>
+      <a href="#ai">AI-консультант</a>
+      <a href="#compare">Сравнение</a>
+      <a href="#sellers">Продавцам</a>
+    </nav>
+
+    <button class="btn btn-light">Войти</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="search">
+    <div class="container hero-content">
+
+      <span class="badge">AI-ПОИСК ПО МАГАЗИНАМ</span>
+
+      <h1>
+        Найдите товар.<br>
+        <span>Заплатите меньше.</span>
+      </h1>
+
+      <p>
+        arzon.ro объединяет предложения магазинов,
+        распознаёт одинаковые товары и помогает выбрать
+        действительно выгодный вариант.
+      </p>
+
+      <div class="search-box">
+        <input
+          id="searchInput"
+          type="text"
+          value="Apple iPhone 17 Pro 256GB"
+          placeholder="Что вы хотите купить?"
+        >
+
+        <button
+          class="btn btn-green"
+          id="searchButton"
+        >
+          Сравнить цены
+        </button>
+      </div>
+
+      <div class="chips">
+        <button class="chip" data-query="Телефон для игр до 5 миллионов сум">
+          🎮 Телефон для игр
+        </button>
+
+        <button class="chip" data-query="Ноутбук для программирования до 12 миллионов">
+          💻 Ноутбук
+        </button>
+
+        <button class="chip" data-query="Холодильник для семьи из 5 человек">
+          🧊 Холодильник
+        </button>
+
+        <button class="chip" data-query="Продукты для плова на 6 человек">
+          🛒 Корзина
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FEATURES -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Один товар — все предложения</h2>
+
+        <p>
+          AI сопоставляет разные названия и характеристики,
+          чтобы сравнение было честным.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+
+        <article class="feature-card">
+          <div class="feature-icon">🧠</div>
+
+          <h3>Умное сопоставление</h3>
+
+          <p>
+            Бренд, модель, артикул, память, цвет,
+            размеры, характеристики и изображения
+            помогают определить, один ли это физический товар.
+          </p>
+        </article>
+
+
+        <article class="feature-card">
+          <div class="feature-icon">📉</div>
+
+          <h3>Реальная история цены</h3>
+
+          <p>
+            Смотрите динамику стоимости и получайте
+            предупреждение, если заявленная скидка
+            не выглядит настоящей экономией.
+          </p>
+        </article>
+
+
+        <article class="feature-card">
+          <div class="feature-icon">📍</div>
+
+          <h3>Цена до двери</h3>
+
+          <p>
+            Учитываем цену, доставку, расстояние,
+            наличие, самовывоз и ориентировочное
+            время получения.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRODUCTS -->
+  <section class="section products-section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Популярные предложения</h2>
+
+        <p>
+          Пример того, как будет выглядеть единая карточка товара.
+        </p>
+      </div>
+
+
+      <div class="products-grid">
+
+        <article class="product-card">
+
+          <div class="product-image">
+            📱
+          </div>
+
+          <div class="product-content">
+
+            <span class="product-tag">
+              ТОЧНОЕ СОПОСТАВЛЕНИЕ · 98%
+            </span>
+
+            <h3>
+              Apple iPhone 17 Pro 256GB
+            </h3>
+
+            <p class="specs">
+              256 ГБ · 6.3″ · 5G · Pro камера · новый
+            </p>
+
+            <div class="price">
+              10 990 000 сум
+              <span class="old-price">
+                12 490 000
+              </span>
+            </div>
+
+            <div class="product-meta">
+              <span class="rating">★ 4.9</span>
+              <span>3 магазина</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <div class="product-image">
+            💻
+          </div>
+
+          <div class="product-content">
+
+            <span class="product-tag">
+              ЛУЧШАЯ ЦЕНА
+            </span>
+
+            <h3>
+              MacBook Pro 14
+            </h3>
+
+            <p class="specs">
+              M4 · 16 ГБ · 512 ГБ SSD · 14.2″
+            </p>
+
+            <div class="price">
+              18 450 000 сум
+            </div>
+
+            <div class="product-meta">
+              <span class="rating">★ 4.8</span>
+              <span>Доставка от 25 000 сум</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <div class="product-image">
+            🧊
+          </div>
+
+          <div class="product-content">
+
+            <span class="product-tag">
+              РЯДОМ С ВАМИ
+            </span>
+
+            <h3>
+              Экономичный холодильник
+            </h3>
+
+            <p class="specs">
+              350 л · No Frost · класс A++ · новый
+            </p>
+
+            <div class="price">
+              7 290 000 сум
+            </div>
+
+            <div class="product-meta">
+              <span class="rating">★ 4.7</span>
+              <span>Самовывоз сегодня</span>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- AI -->
+  <section class="section" id="ai">
+
+    <div class="container">
+
+      <div class="ai-container">
+
+        <div class="ai-info">
+
+          <span class="badge">
+            AI-КОНСУЛЬТАНТ
+          </span>
+
+          <h2>
+            Не знаете точную модель?
+            Просто опишите задачу.
+          </h2>
+
+          <p>
+            AI превращает обычный запрос в параметры поиска,
+            подбирает товары и объясняет, чем варианты отличаются.
+          </p>
+
+          <button
+            class="btn btn-green"
+            id="tryAi"
+          >
+            Попробовать поиск
+          </button>
+
+        </div>
+
+
+        <div class="chat">
+
+          <div class="message user-message">
+            Мне нужен телефон для игр до 5 миллионов сум.
+          </div>
+
+          <div class="message bot-message">
+            <strong>Нашёл 8 подходящих вариантов.</strong>
+            <br><br>
+            Лучший баланс — модель A:
+            мощная графика и экран 120 Гц.
+          </div>
+
+          <div class="message user-message">
+            А если увеличить бюджет на миллион?
+          </div>
+
+          <div class="message bot-message">
+            Тогда появляется модель B
+            с более быстрым процессором
+            и 256 ГБ памяти.
+          </div>
+
+          <div class="chat-input">
+
+            <input
+              id="chatInput"
+              placeholder="Задайте вопрос..."
+            >
+
+            <button id="chatButton">
+              →
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- COMPARISON -->
+  <section class="section" id="compare">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Сравнение без маркетингового шума
+        </h2>
+
+        <p>
+          Все важные параметры — в одном месте.
+        </p>
+
+      </div>
+
+
+      <div class="table-wrapper">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Продавец</th>
+              <th>Цена</th>
+              <th>Скидка</th>
+              <th>Доставка</th>
+              <th>Наличие</th>
+              <th>Получение</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><strong>Tech Store</strong></td>
+              <td class="green-text">
+                10 990 000 сум
+              </td>
+              <td class="green-text">
+                12%
+              </td>
+              <td>
+                Бесплатно
+              </td>
+              <td>
+                В наличии
+              </td>
+              <td>
+                Сегодня
+              </td>
+            </tr>
+
+
+            <tr>
+              <td><strong>Market Shop</strong></td>
+              <td>
+                11 150 000 сум
+              </td>
+              <td>
+                8%
+              </td>
+              <td>
+                35 000 сум
+              </td>
+              <td>
+                В наличии
+              </td>
+              <td>
+                1–2 дня
+              </td>
+            </tr>
+
+
+            <tr>
+              <td><strong>Digital House</strong></td>
+              <td>
+                10 700 000 сум
+              </td>
+              <td class="warning">
+                30%
+              </td>
+              <td>
+                70 000 сум
+              </td>
+              <td>
+                Под заказ
+              </td>
+              <td>
+                3–5 дней
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+
+      <div class="warning-box">
+        ⚠️ <strong>Внимание:</strong>
+        заявленная скидка 30% требует проверки истории цены —
+        недавняя цена была близка к текущей.
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SELLERS -->
+  <section class="section" id="sellers">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Выгода и для продавцов
+        </h2>
+
+        <p>
+          Малому бизнесу не обязательно покупать огромный рекламный охват.
+        </p>
+
+      </div>
+
+
+      <div class="seller-grid">
+
+        <article class="seller-card">
+
+          <h3>Больше покупателей</h3>
+
+          <p>
+            Ваши товары появляются рядом с крупными
+            магазинами и получают трафик благодаря
+            цене, наличию и близости к покупателю.
+          </p>
+
+          <div class="seller-metrics">
+            ↗ Переходы
+            <span>◎ Просмотры</span>
+          </div>
+
+        </article>
+
+
+        <article class="seller-card">
+
+          <h3>Аналитика спроса</h3>
+
+          <p>
+            Смотрите, какие товары ищут пользователи,
+            какие предложения открывают и где существует
+            неудовлетворённый спрос.
+          </p>
+
+          <div class="seller-metrics">
+            ◉ Спрос
+            <span>⌁ Конкуренты</span>
+          </div>
+
+        </article>
+
+
+        <article class="seller-card">
+
+          <h3>Подключение каталога</h3>
+
+          <p>
+            Добавляйте товары вручную или подключайте
+            собственную систему учёта.
+          </p>
+
+          <div class="seller-metrics">
+            ✓ Каталог
+            <span>↻ Синхронизация</span>
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="cta">
+
+        <h2>
+          Один поиск — весь рынок
+        </h2>
+
+        <p>
+          Электроника, одежда, обувь, мебель,
+          стройматериалы, техника, продукты и товары
+          повседневного спроса.
+        </p>
+
+        <button
+          class="btn btn-green"
+          id="startButton"
+        >
+          Начать поиск
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="footer">
+
+  <div class="container">
+    © 2026 arzon.ro · Умный поиск и сравнение цен
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+<script>
+  const revealElements = document.querySelectorAll(
+    '.section-title, .feature-card, .product-card, .ai-container, .table-wrapper, .warning-box, .seller-card, .cta'
+  );
+
+  revealElements.forEach((element, index) => {
+    element.classList.add('scroll-reveal');
+    element.style.setProperty('--reveal-delay', `${(index % 3) * 80}ms`);
+  });
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  revealElements.forEach((element) => revealObserver.observe(element));
+</script>
+
+</body>
+</html>
